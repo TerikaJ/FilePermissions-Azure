@@ -17,8 +17,6 @@ This lab focuses on file permissions and shares within an Active Directory domai
 
 <h2>File Permission Configuration Steps</h2>
 
-Here are the steps with circled numbers for your GitHub project:
-
 ① While logged in to the domain controller VM as an admin, create the folders on the C:\ drive.
 
 ② Ensure you have created 4 appropriately named folders for setting permissions.
