@@ -27,7 +27,7 @@ In order to set permissions to folders and files, we need to create the folders 
 Domain Users can Read the read-access folder and they have Read/Write permissions on the write-access folder.
 Domain Admins have Read/Write access to the no-access folder.
 </p>
-<br />
+
 
 <p>
 <img src="https://i.imgur.com/kWrpLFE.png" height="80%" width="80%" alt="Permissions Steps"/>
@@ -35,7 +35,7 @@ Domain Admins have Read/Write access to the no-access folder.
 <p>
 On the client VM, navigate to the shared folders through the following path in File Explorer: \\dc-1. Notice how some folders cannot allow you to add files, but only view them. One does not allow access at all. This is because as a Domain User, permissions for the folder are tied to the respective Security Group and the folder's own set permissions for users within that Security Group.
 </p>
-<br />
+
 
 <p>
 <img src="https://i.imgur.com/NgM0CcI.png" height="80%" width="80%" alt="Permissions Steps"/>
@@ -44,7 +44,7 @@ On the client VM, navigate to the shared folders through the following path in F
 <p>
 Next, we will make a new Security Group and assign appropriate permissions to the accounting folder. On the domain controller, have the Active Directory Users and Computers panel open. Create a new Group called ACCOUNTANTS. After creating the new Group, go to the accounting folder and assign permissions to the folder so the ACCOUNTANTS Group has Read/Write permissions.
 </p>
-<br />
+
 
 <p>
 <img src="https://i.imgur.com/xev1Svv.png" height="80%" width="80%" alt="Permissions Steps"/>
@@ -52,7 +52,7 @@ Next, we will make a new Security Group and assign appropriate permissions to th
 </p>
 <p>
 The user cannot access the accounting folder because they are not part of the ACCOUNTANTS Security Group. Log off the client so that the permissions are in place by the time the client is logged into again. On the domain controller, open the ACCOUNTANTS Properties on Active Directory Users and Computers. In the Members tab, add the respective user. In my case, it is bon.rovej. Upon logging into the client, bon.rovej is now able to open the accounting folder because they are part of ACCOUNTANTS.
-<br />
+
 
 <h2>Conclusion</h2>
 
