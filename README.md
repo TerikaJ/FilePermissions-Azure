@@ -56,10 +56,10 @@ This lab focuses on file permissions and shares within an Active Directory domai
 
 ⑤ Log into **Client-01** VM as a normal user from one of the accounts you created during the active directory lab. Navigate to the shared folders through the following path in File Explorer: **\\dc-01**
 
+⑥ Observe how some folders only allow you to **"view"** files, while others do not allow access at all. This is occurs because the **"Domain User"** permissions for the specific folder are linked to the respective **Security Group** and set permissions for **users** within that Security Group. 
+
 <img width="550" alt="5  Client dc-01" src="https://github.com/TerikaJ/FilePermissions-Azure/assets/136477450/7a02ac33-de0c-49fb-ac95-a2f99e9050a7">
 
-
-⑥ Observe how some folders only allow you to **"view"** files, while others do not allow access at all. This is occurs because the **"Domain User"** permissions for the specific folder are linked to the respective **Security Group** and set permissions for **users** within that Security Group. 
 
 
 
@@ -76,23 +76,26 @@ This lab focuses on file permissions and shares within an Active Directory domai
 
 <h2>Management Steps</h2>
 
-① On the domain controller, open the Active Directory Users and Computers panel.
+① On **DC-01**, open the Active Directory **"Users and Computers panel"** under **Tools**.
 
-② Create a new Group called ACCOUNTANTS.
+② Create a New **Organizational Unit** called **"SECURITY GROUPS"**. Then create a New Group within the **Organizational Unit** called **ACCOUNTANTS**.
 
-③ After creating the new Group, go to the accounting folder and assign permissions to the folder so the ACCOUNTANTS Group has Read/Write permissions.
+<img width="550" alt="6  AD ACCOUNTANTS" src="https://github.com/TerikaJ/FilePermissions-Azure/assets/136477450/3279d002-c0b1-48da-a005-458dd9835168">
 
-④ The user cannot access the accounting folder because they are not part of the ACCOUNTANTS Security Group.
+③ After creating the new Group, go to the accounting folder and assign permissions to the folder so the **ACCOUNTANTS** Group has "Read/Write" permissions.
+
+<img width="550" alt="7  ACCOUNTING FOLDER" src="https://github.com/TerikaJ/FilePermissions-Azure/assets/136477450/89be3087-2a76-4fe8-9aa6-3e65c4968c2d">
+
+④ Return to the **Client-01** VM. You can observe the user cannot access the "ACCOUNTING" folder because they are not part of the **ACCOUNTANTS** Security Group.
 
 ⑤ Log off the client so that the permissions are in place by the time the client is logged into again.
 
 ⑥ On the domain controller, open the ACCOUNTANTS Properties on Active Directory Users and Computers.
 
-⑦ In the Members tab, add the respective user.
+⑦ In the Members tab, add the respective user. This example uses: (username)
 
-⑧ In your case, it is bon.rovej.
+⑧ After logging back into **Client-01**, (username) is now able to open the accounting folder because they are part of the **ACCOUNTANTS** security group
 
-⑨ Upon logging into the client, bon.rovej is now able to open the accounting folder because they are part of ACCOUNTANTS.
 
 
 <img src="https://i.imgur.com/xev1Svv.png" height="80%" width="80%" alt="Permissions Steps"/>
