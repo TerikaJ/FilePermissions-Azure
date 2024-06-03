@@ -1,4 +1,4 @@
-<h1>File Permissions Implementation and Navigation</h1>
+<h1>File Permissions Configuration and Navigation</h1>
 
 ![ga-security-risks-of-file-transfers-850x330](https://github.com/TerikaJ/FilePermissions-Azure/assets/136477450/334719c6-0040-40bd-8ffa-7940752e80f8)
 
@@ -12,8 +12,8 @@ This lab focuses on file permissions and shares within an Active Directory domai
 
 <h2>Operating Systems Used </h2>
 
-- Windows Server 2022
-- Windows 10 Pro (21H2)
+- Windows Server 2022 (Domain Controller - **DC-01**)
+- Windows 10 Pro (21H2) (Client - **Client-01**)
 
 <h2>File Permissions Configuration Steps</h2>
 
