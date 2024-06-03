@@ -17,23 +17,29 @@ This lab focuses on file permissions and shares within an Active Directory domai
 
 <h2>File Permission Configuration Steps</h2>
 
-① While logged in to the domain controller VM as an admin, create the folders on the C:\ drive.
+① While logged in to the **DC-01** VM as an admin (this example uses: **mydomain.com/jane_admin**), create the following folders on the C:\ drive:
 
-② Ensure you have created 4 appropriately named folders for setting permissions.
+    READ-ACCESS
+    WRITE-ACCESS
+    NO-ACCESS
+    ACCOUNTING
 
-③ To share a folder and assign permissions, open the folder's Properties and click on Share under the Sharing tab.
 
-④ Specify people on the network to share with and assign appropriate permissions.
+② To share a folder and assign permissions, open the folder's Properties and click on Share under the Sharing tab.
 
-⑤ Set the following permissions for the folders:
+③ Specify people on the network to share with and assign appropriate permissions.
+
+④ Set the following permissions for the folders:
     - Domain Users can Read the read-access folder and have Read/Write permissions on the write-access folder.
     - Domain Admins have Read/Write access to the no-access folder.
 
-⑥ On the client VM, navigate to the shared folders through the following path in File Explorer: \\dc-1.
+⑤ On the client VM, navigate to the shared folders through the following path in File Explorer: \\dc-1.
 
-⑦ Notice how some folders only allow you to view files, while one doesn't allow access at all.
+⑥ Notice how some folders only allow you to view files, while one doesn't allow access at all.
 
-⑧ This is because as a Domain User, permissions for the folder are tied to the respective Security Group and the folder's own set permissions for users within that Security Group.
+⑦ This is because as a Domain User, permissions for the folder are tied to the respective Security Group and the folder's own set permissions for users within that Security Group.
+
+⑧ 
 
 
 <img src="https://i.imgur.com/bUjobDC.png" height="80%" width="80%" alt="Permissions Steps"/>
