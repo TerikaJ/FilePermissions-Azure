@@ -61,11 +61,8 @@ This lab focuses on file permissions and shares within an Active Directory domai
 
 
 
-⑥ Notice how some folders only allow you to view files, while one doesn't allow access at all.
+⑥ Observe how some folders only allow you to **"view"** files, while others do not allow access at all. This is occurs because the **"Domain User"** permissions for the specific folder are linked to the respective **Security Group** and set permissions for **users** within that Security Group.
 
-⑦ This is because as a Domain User, permissions for the folder are tied to the respective Security Group and the folder's own set permissions for users within that Security Group.
-
-⑧ 
 
 
 <img src="https://i.imgur.com/bUjobDC.png" height="80%" width="80%" alt="Permissions Steps"/>
