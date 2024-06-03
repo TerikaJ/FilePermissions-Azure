@@ -24,19 +24,35 @@ This lab focuses on file permissions and shares within an Active Directory domai
     NO-ACCESS
     ACCOUNTING
 
-<img width="808" alt="1  C DRIVE FOLDERS" src="https://github.com/TerikaJ/FilePermissions-Azure/assets/136477450/38b0fa0b-1032-4d15-9f8e-427c806e7e3c">
+<img width="550" alt="1  C DRIVE FOLDERS" src="https://github.com/TerikaJ/FilePermissions-Azure/assets/136477450/38b0fa0b-1032-4d15-9f8e-427c806e7e3c">
 
 ② To share a folder and assign permissions, open the folder's Properties and click on **Share** under the Sharing tab.
 
+<img width="550" alt="1a  Sharing" src="https://github.com/TerikaJ/FilePermissions-Azure/assets/136477450/ce51936d-d1b1-46dc-8d33-cdc280eb5086">
 
+③ Specify **domain users** and **domain admins** on the network to share folders with and assign appropriate permissions.
 
-③ Specify **domain users** on the network to share folders with and assign appropriate permissions.
+<img width="550" alt="1b  " src="https://github.com/TerikaJ/FilePermissions-Azure/assets/136477450/43c2579c-318a-4771-9e31-3af109838888">
 
 ④ Set the following permissions for the folders:
-    - Domain Users can Read the read-access folder and have Read/Write permissions on the write-access folder.
-    - Domain Admins have Read/Write access to the no-access folder.
+
+**Domain Users:**  
+    - Grant "Read" permissions to the "READ-ACCESS" folder 
+    - Grant "Read/Write" permissions on the "WRITE-ACCESS" folder
+**Domain Admins:** 
+    - Grant "Read/Write" access to the "NO-ACCESS" folder.
+
+<img width="550" alt="2  Domain Users read" src="https://github.com/TerikaJ/FilePermissions-Azure/assets/136477450/2d2fbb02-bd06-491c-a48a-0ba8da245950">
+
+<img width="550" alt="3  Domain users read:write" src="https://github.com/TerikaJ/FilePermissions-Azure/assets/136477450/80ef8d98-55a6-465b-b409-eb22a4b79edc">
+
+<img width="550" alt="4  Domain admins read:write" src="https://github.com/TerikaJ/FilePermissions-Azure/assets/136477450/1488b346-c2eb-4b06-86da-1bc22cd565a5">
 
 ⑤ On the client VM, navigate to the shared folders through the following path in File Explorer: \\dc-1.
+
+
+
+
 
 ⑥ Notice how some folders only allow you to view files, while one doesn't allow access at all.
 
