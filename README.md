@@ -54,14 +54,12 @@ This lab focuses on file permissions and shares within an Active Directory domai
 
 <img width="550" alt="4  Domain admins read:write" src="https://github.com/TerikaJ/FilePermissions-Azure/assets/136477450/1488b346-c2eb-4b06-86da-1bc22cd565a5">
 
-⑤ On the **Client-01** VM, navigate to the shared folders through the following path in File Explorer: **\\dc-01**
+⑤ Log into **Client-01** VM as a normal user from one of the accounts you created during the active directory lab. Navigate to the shared folders through the following path in File Explorer: **\\dc-01**
 
 <img width="550" alt="5  Client dc-01" src="https://github.com/TerikaJ/FilePermissions-Azure/assets/136477450/7a02ac33-de0c-49fb-ac95-a2f99e9050a7">
 
 
-
-
-⑥ Observe how some folders only allow you to **"view"** files, while others do not allow access at all. This is occurs because the **"Domain User"** permissions for the specific folder are linked to the respective **Security Group** and set permissions for **users** within that Security Group.
+⑥ Observe how some folders only allow you to **"view"** files, while others do not allow access at all. This is occurs because the **"Domain User"** permissions for the specific folder are linked to the respective **Security Group** and set permissions for **users** within that Security Group. 
 
 
 
