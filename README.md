@@ -54,8 +54,9 @@ This lab focuses on file permissions and shares within an Active Directory domai
 
 <img width="550" alt="4  Domain admins read:write" src="https://github.com/TerikaJ/FilePermissions-Azure/assets/136477450/1488b346-c2eb-4b06-86da-1bc22cd565a5">
 
-⑤ On the client VM, navigate to the shared folders through the following path in File Explorer: \\dc-1.
+⑤ On the **Client-01** VM, navigate to the shared folders through the following path in File Explorer: **\\dc-01**
 
+<img width="550" alt="5  Client dc-01" src="https://github.com/TerikaJ/FilePermissions-Azure/assets/136477450/7a02ac33-de0c-49fb-ac95-a2f99e9050a7">
 
 
 
