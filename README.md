@@ -24,10 +24,13 @@ This lab focuses on file permissions and shares within an Active Directory domai
     NO-ACCESS
     ACCOUNTING
 
+<img width="808" alt="1  C DRIVE FOLDERS" src="https://github.com/TerikaJ/FilePermissions-Azure/assets/136477450/38b0fa0b-1032-4d15-9f8e-427c806e7e3c">
 
-② To share a folder and assign permissions, open the folder's Properties and click on Share under the Sharing tab.
+② To share a folder and assign permissions, open the folder's Properties and click on **Share** under the Sharing tab.
 
-③ Specify people on the network to share with and assign appropriate permissions.
+
+
+③ Specify **domain users** on the network to share folders with and assign appropriate permissions.
 
 ④ Set the following permissions for the folders:
     - Domain Users can Read the read-access folder and have Read/Write permissions on the write-access folder.
