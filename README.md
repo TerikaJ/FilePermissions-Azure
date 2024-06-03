@@ -38,21 +38,16 @@ Here are the steps with circled numbers for your GitHub project:
 ⑧ This is because as a Domain User, permissions for the folder are tied to the respective Security Group and the folder's own set permissions for users within that Security Group.
 
 
-<p>
 <img src="https://i.imgur.com/bUjobDC.png" height="80%" width="80%" alt="Permissions Steps"/>
 <img src="https://i.imgur.com/lz1DMos.png" height="80%" width="80%" alt="Permissions Steps"/>
-</p>
 
 
-<p>
+
 <img src="https://i.imgur.com/kWrpLFE.png" height="80%" width="80%" alt="Permissions Steps"/>
-</p>
 
 
-<p>
 <img src="https://i.imgur.com/NgM0CcI.png" height="80%" width="80%" alt="Permissions Steps"/>
 <img src="https://i.imgur.com/I4k9T2J.png" height="80%" width="80%" alt="Permissions Steps"/>
-</p>
 
 <h2>Management Steps</h2>
 
@@ -75,12 +70,9 @@ Here are the steps with circled numbers for your GitHub project:
 ⑨ Upon logging into the client, bon.rovej is now able to open the accounting folder because they are part of ACCOUNTANTS.
 
 
-
-<p>
 <img src="https://i.imgur.com/xev1Svv.png" height="80%" width="80%" alt="Permissions Steps"/>
 <img src="https://i.imgur.com/SHotVB2.png" height="80%" width="80%" alt="Permissions Steps"/>
-</p>
-<p>
+
 
 
 
