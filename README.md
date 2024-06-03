@@ -1,9 +1,8 @@
-<p align="center">
-<img src="https://i.imgur.com/xlYwPUf.png" alt="Permissions Photo"/>
-</p>
+<h1>File Permissions Implementation and Navigation</h1>
 
-<h1>Understanding File Permissions</h1>
-This lab focuses on file permissions and shares in the context of an Active Directory domain. File permissions and shares are key in a business setting to make sure users have the appropriate permissions and access to files they need. This is building up from a previous lab where I have a client joined to my domain ernestotest.com. I am logged in as Jane Doe (an admin account) on the domain controller VM and as a normal user on the client VM. <br />
+![ga-security-risks-of-file-transfers-850x330](https://github.com/TerikaJ/FilePermissions-Azure/assets/136477450/334719c6-0040-40bd-8ffa-7940752e80f8)
+
+This lab focuses on file permissions and shares within an Active Directory domain, essential components in a business environment to ensure users have the appropriate access to the files they need. Building on our previous Active Directory lab where **Client-01** was joined to the domain **`mydomain.com`** on **DC-01**, I am logged in as an administrator (**mydomain.com\jane_admin**) on the **DC_01** VM and as a normal user on the **Client-01** VM. This project will demonstrate the practical steps to configure and manage file permissions and shares, highlighting their importance in maintaining a secure and efficient domain environment.
 
 <h2>Environments and Technologies Used</h2>
 
@@ -55,6 +54,6 @@ Next, we will make a new Security Group and assign appropriate permissions to th
 The user cannot access the accounting folder because they are not part of the ACCOUNTANTS Security Group. Log off the client so that the permissions are in place by the time the client is logged into again. On the domain controller, open the ACCOUNTANTS Properties on Active Directory Users and Computers. In the Members tab, add the respective user. In my case, it is bon.rovej. Upon logging into the client, bon.rovej is now able to open the accounting folder because they are part of ACCOUNTANTS.
 <br />
 
-<h2>Lessons Learned </h2>
+<h2>Conclusion</h2>
 
 This lab made me understand how file permissions work in the context of Windows/Active Directory. In a real setting, I might have to set permissions so that people can only access what they need to in order to complete their work. It is not necessary to give more permissions than what is needed.
