@@ -1,3 +1,5 @@
+
+
 <h1>File Permissions Configuration and Management</h1>
 
 <img src="https://github.com/TerikaJ/FilePermissions-Azure/assets/136477450/334719c6-0040-40bd-8ffa-7940752e80f8" alt="ga-security-risks-of-file-transfers" width="700" height="275">
