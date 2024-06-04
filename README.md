@@ -53,7 +53,7 @@ This lab focuses on file permissions and shares within an Active Directory domai
 
 <img width="550" alt="4  Domain admins read:write" src="https://github.com/TerikaJ/FilePermissions-Azure/assets/136477450/1488b346-c2eb-4b06-86da-1bc22cd565a5">
 
-⑤ Log into **Client-01** VM as a normal user from one of the accounts we created during the active directory lab. This example uses: **bon.horo**
+⑤ Log into **Client-01** VM as a normal user from one of the accounts created during the active directory lab. This example uses: **bon.horo**
 Navigate to the shared folders through the following path in File Explorer: **\\dc-01**
 
 <img width="375" alt="9  Bon Horo log in" src="https://github.com/TerikaJ/FilePermissions-Azure/assets/136477450/09ce742c-a3f8-4f89-82dd-1a7a3b5431a2">
