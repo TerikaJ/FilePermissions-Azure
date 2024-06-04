@@ -69,6 +69,8 @@ Navigate to the shared folders through the following path in File Explorer: **\\
 
 ① On **DC-01**, open the Active Directory **"Users and Computers panel"** under **Tools**.
 
+<img width="550" alt="8  AD Users and Computers" src="https://github.com/TerikaJ/FilePermissions-Azure/assets/136477450/e9d74420-9f7c-4670-b509-fa74269a39ae">
+
 ② Create a New **Organizational Unit** called **"SECURITY GROUPS"**. Then create a New Group within the **Organizational Unit** called **ACCOUNTANTS**.
 
 <img width="550" alt="6  AD ACCOUNTANTS" src="https://github.com/TerikaJ/FilePermissions-Azure/assets/136477450/3279d002-c0b1-48da-a005-458dd9835168">
@@ -79,6 +81,8 @@ Navigate to the shared folders through the following path in File Explorer: **\\
 
 ④ Return to the **Client-01** VM. You can observe the user cannot access the "ACCOUNTING" folder because they are not part of the **ACCOUNTANTS** Security Group. Log off **Client-01** for now. 
 
+
+
 ⑤ On the domain controller, open the Active Directory Users and Computers tab under Tools, then click "Security Groups" to locate the **ACCOUNTANTS** Properties.
 
 <img width="550" alt="10a  Accountants" src="https://github.com/TerikaJ/FilePermissions-Azure/assets/136477450/6f7a8ead-7e42-4ef9-95ad-64e3f0f51bd2">
@@ -88,7 +92,7 @@ Navigate to the shared folders through the following path in File Explorer: **\\
 
 <img width="550" alt="10  Accountants Bon Horo" src="https://github.com/TerikaJ/FilePermissions-Azure/assets/136477450/64d94645-6d47-49c0-aee0-f9a61b4005c9">
 
-⑦ After logging back into **Client-01**, **bon.horo** is now able to open the accounting folder because they are part of the **ACCOUNTANTS** security group
+⑦ Be sure to **refresh** the Server Manager before proceding otherwise the changes will not apply! Next, log back into **Client-01**, **bon.horo** is now able to open the accounting folder because they are part of the **ACCOUNTANTS** security group
 
 <img width="550" alt="11  Accounting Bon Horo" src="https://github.com/TerikaJ/FilePermissions-Azure/assets/136477450/81e7fe3a-108e-4976-a587-b17d7c6b45e6">
 
