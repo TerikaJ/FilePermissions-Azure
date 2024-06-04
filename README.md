@@ -81,6 +81,7 @@ Navigate to the shared folders through the following path in File Explorer: **\\
 
 ④ Return to the **Client-01** VM. You can observe the user cannot access the "ACCOUNTING" folder because they are not part of the **ACCOUNTANTS** Security Group. Log off **Client-01** for now. 
 
+<img width="550" alt="7  Accountants no Bon Horo" src="https://github.com/TerikaJ/FilePermissions-Azure/assets/136477450/098f7ade-6bd1-4007-adc6-ca9ec24c836d">
 
 
 ⑤ On the domain controller, open the Active Directory Users and Computers tab under Tools, then click "Security Groups" to locate the **ACCOUNTANTS** Properties.
@@ -92,11 +93,8 @@ Navigate to the shared folders through the following path in File Explorer: **\\
 
 <img width="550" alt="10  Accountants Bon Horo" src="https://github.com/TerikaJ/FilePermissions-Azure/assets/136477450/64d94645-6d47-49c0-aee0-f9a61b4005c9">
 
-⑦ Be sure to **refresh** the Server Manager before proceding otherwise the changes will not apply! Next, log back into **Client-01**, **bon.horo** is now able to open the accounting folder because they are part of the **ACCOUNTANTS** security group
-
-<img width="550" alt="11  Accounting Bon Horo" src="https://github.com/TerikaJ/FilePermissions-Azure/assets/136477450/81e7fe3a-108e-4976-a587-b17d7c6b45e6">
-
-⑧ 
+⑦ Be sure to **refresh** the Server Manager before proceding otherwise the changes will not apply! Next, log back into **Client-01**, **bon.horo** is now able to open the accounting folder because they are part of the **ACCOUNTANTS** security group.
+***Important: If your user is still not able to access the folder after logging back in, you may need to restart the **Client-01** VM.***
 
 <img width="550" alt="11  Accounting Bon Horo" src="https://github.com/TerikaJ/FilePermissions-Azure/assets/136477450/81e7fe3a-108e-4976-a587-b17d7c6b45e6">
 
