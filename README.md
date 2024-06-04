@@ -89,15 +89,24 @@ Navigate to the shared folders through the following path in File Explorer: **\\
 
 <img width="550" alt="7  ACCOUNTING FOLDER" src="https://github.com/TerikaJ/FilePermissions-Azure/assets/136477450/89be3087-2a76-4fe8-9aa6-3e65c4968c2d">
 
-④ Return to the **Client-01** VM. You can observe the user cannot access the "ACCOUNTING" folder because they are not part of the **ACCOUNTANTS** Security Group.
+④ Return to the **Client-01** VM. You can observe the user cannot access the "ACCOUNTING" folder because they are not part of the **ACCOUNTANTS** Security Group. Log off **Client-01** for now. 
 
-⑤ Log off **Client-01** to apply new permissions 
+⑤ On the domain controller, open the Active Directory Users and Computers tab under Tools, then click "Security Groups" to locate the **ACCOUNTANTS** Properties.
 
-⑥ On the domain controller, open the ACCOUNTANTS Properties on Active Directory Users and Computers.
+<img width="873" alt="10a  Accountants" src="https://github.com/TerikaJ/FilePermissions-Azure/assets/136477450/6f7a8ead-7e42-4ef9-95ad-64e3f0f51bd2">
 
-⑦ In the Members tab, add the respective user. This example uses: **bon.horo**
+⑥ In the Members tab, add the respective user. This example uses: **bon.horo**
+***Important: There are two ways to add the specific user to the ACCOUNTANTS group. The first way is shown above by going through the Security Groups folder; The other way is by locating the user under the EMPLOYEES folder by name and going into their "Properties" clicking "Member of" to add their association as show in the example below.***
 
-⑧ After logging back into **Client-01**, **bon.horo** is now able to open the accounting folder because they are part of the **ACCOUNTANTS** security group
+<img width="1144" alt="10  Accountants Bon Horo" src="https://github.com/TerikaJ/FilePermissions-Azure/assets/136477450/64d94645-6d47-49c0-aee0-f9a61b4005c9">
+
+⑦ After logging back into **Client-01**, **bon.horo** is now able to open the accounting folder because they are part of the **ACCOUNTANTS** security group
+
+<img width="783" alt="11  Accounting Bon Horo" src="https://github.com/TerikaJ/FilePermissions-Azure/assets/136477450/81e7fe3a-108e-4976-a587-b17d7c6b45e6">
+
+⑧ 
+
+<img width="783" alt="11  Accounting Bon Horo" src="https://github.com/TerikaJ/FilePermissions-Azure/assets/136477450/81e7fe3a-108e-4976-a587-b17d7c6b45e6">
 
 
 
