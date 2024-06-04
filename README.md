@@ -63,19 +63,7 @@ Navigate to the shared folders through the following path in File Explorer: **\\
 
 <img width="550" alt="5  Client dc-01" src="https://github.com/TerikaJ/FilePermissions-Azure/assets/136477450/7a02ac33-de0c-49fb-ac95-a2f99e9050a7">
 
-
-
-
-<img src="https://i.imgur.com/bUjobDC.png" height="80%" width="80%" alt="Permissions Steps"/>
-<img src="https://i.imgur.com/lz1DMos.png" height="80%" width="80%" alt="Permissions Steps"/>
-
-
-
-<img src="https://i.imgur.com/kWrpLFE.png" height="80%" width="80%" alt="Permissions Steps"/>
-
-
-<img src="https://i.imgur.com/NgM0CcI.png" height="80%" width="80%" alt="Permissions Steps"/>
-<img src="https://i.imgur.com/I4k9T2J.png" height="80%" width="80%" alt="Permissions Steps"/>
+<img width="550" alt="11  No access" src="https://github.com/TerikaJ/FilePermissions-Azure/assets/136477450/95c039fe-2826-460f-8178-2cca35c7ea84">
 
 <h2>Management Steps</h2>
 
